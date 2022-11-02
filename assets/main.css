@@ -1,0 +1,706 @@
+html, body{ 
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@-webkit-keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
+@-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+@keyframes animationP4 {
+    0% {
+        background-image: url(/products/img/P4.jpg);
+    }
+    100% {
+        background-image: url(/products/img/P4b.jpg);
+    }
+}
+@font-face{
+    font-family: myfont;
+    src: url(../assets/Soft.ttf);
+}
+@font-face{
+    font-family: lv;
+    src: url(../assets/lv.ttf);
+}
+@font-face{
+    font-family: hel;
+    src: url(../assets/hel.ttf);
+}
+@font-face{
+    font-family: din;
+    src: url(../assets/din.ttf);
+}
+@font-face{
+    font-family: fbold;
+    src: url(../assets/bold.otf);
+}
+body {
+    color: black;
+    background:white;
+    font-family: din;
+}
+.is-blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+#procode {
+    padding: 5.7vw 3vw 3vw 5vw;
+    position: absolute;
+    margin-left: -8vh;
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 20px;
+}
+.header {
+    text-align: center;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: .1rem solid rgba(192, 192, 192, 0.5);
+}
+.header a {
+    font-family: fbold;
+    color: black;
+    text-decoration: none;
+}
+.Modal {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: 0.5s;
+    overflow: auto;
+    transition: all 0.3s linear;
+}
+#msgboxtxt {
+    color: black;
+    font-family: 'myfont';
+    font-size: x-large;
+}
+.Modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 290px;
+    height: 118px;
+}
+  .ModalOpen { overflow: hidden; }
+  .is-hidden { display: none; }
+  .is-visuallyHidden { opacity: 0; }
+.dis-button {
+    pointer-events: none;
+    background: #898989;
+}
+.alert {
+    border-bottom: .1rem solid rgba(192, 192, 192, 0.5);
+    background: whitesmoke;
+}
+#footerMessage {
+    POSITION: RELATIVE;
+    top: 38vw;
+    text-align: center;
+    font-size:small;
+}
+.nav h2 {
+    font-family: lv;
+    letter-spacing: 1vw;
+    text-align: center;
+}
+.alert h3 {
+    font-family: hel;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 11.5px;
+}
+.nav {
+    width: 100%;
+    border-bottom: .1rem solid rgba(192, 192, 192, 0.5);
+}
+.nav img {
+    height: 10vh;
+    text-align: center;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    width: 22vh;
+}
+.home {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    display: none; /* it was display:flex; */
+    position: relative;
+    justify-content: center;
+    margin-top: 10vw;
+}
+.home img {
+    object-fit: cover;
+    height: 295px;
+    width: 100vw;
+    object-position: 99% 70%;
+}
+.shop-button {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    font-family: myfont;
+    margin: 0 AUTO;
+    padding: 10px 10px 10px 10px;
+    border: 0.1px solid black;
+    position: relative;
+    border-radius: 3px;
+    top: 20px;
+    width: 90%;
+}
+.shop-button:active {
+    background: #e0e0e0;
+}
+.footerLinks {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 40vw;
+}
+.btn {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background: none;
+    display: block;
+    font-family: myfont;
+    margin: 0 AUTO;
+    padding: 10px 10px 10px 10px;
+    border: 0.1px solid black;
+    position: relative;
+    transition-duration: .3s;
+    border-radius: 3px;
+    top: 20px;
+    width: 90%;
+}
+svg {
+    width: 5vw;
+}
+.btn:active {
+    background: #e0e0e0;
+}
+.btn:hover {
+    background: gray;
+}
+.newsletter {
+    position: relative;
+    top: 12vw;
+    text-align: center;
+}
+.newsletter p {
+    font-family: myfont;
+    color: gray;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.newsletter input[type="email"] {
+    padding: 3vw 0vw 3vw 2vw;
+    position: relative;
+    top: 5vw;
+}
+.newsletter button {
+    padding: 3vw 3vw 3vw 5vw;
+    position: relative;
+    top: 5.5vw;
+    margin-left: -14vw;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+.new-drop {
+    position: relative;
+    top: 8vw;
+}
+.new-drop h2 {
+    font-family: fbold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#Pprice {
+    text-align: center;
+    color: dimgray;
+    font-size: larger;
+}
+.newsletter-form {
+    background: #161616;
+    text-align: center;
+    padding: 3px;
+    padding-bottom: 10vw;
+    position: relative;
+    top: 59px;
+}
+.newsletter-form input {
+    padding: 3vw 0vw 3vw 4vw;
+    position: relative;
+    top: 5vw;
+    width: 90vw;
+    background: lightgray;
+}
+.newsletter-form button {
+    padding: 3vw 3vw 3vw 5vw;
+    position: relative;
+    top: 5.5vw;
+    margin-left: -14vw;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+.slide {
+    width: 97vw;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 11px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    top: 6vw;
+}
+.shopslider {
+    margin-left: 5vw;
+    display: inline;
+}
+.all {
+    position: relative;
+    top: 10vw;
+    display: none; /*remove the display ida baghi yrj3 ShopAll*/
+}
+.a-all {
+    color: orange;
+    font-family: 'fbold';
+    position: absolute;
+    right: 0px;
+    padding: 2vw 4vw 0VW 0VW;
+    font-size: smaller;
+}
+.sold-out{
+    background: #dcdcdc21;
+    height: 240px;
+    border-radius: 2px;
+    filter: brightness(0.2);
+    pointer-events: none;
+}
+#shop-all {
+    width: 97vw;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 11px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    top: 6vw;
+}
+.card {
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+}
+.card img {
+    -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
+    animation: pulsate-bck 1.5s ease-in-out infinite both;
+    width: 40vw;
+    height: 40vw;
+    object-position: 99% 3%;
+    object-fit: cover;}
+.card h6 {
+    color: orangered;
+    font-size: 10px;
+    position: relative;
+    top: -2vw;
+}
+.card h4 {
+    color: black;
+    position: relative;
+    top: -6vw;
+    white-space: break-spaces;
+    font-size: 3.5vw;
+}
+.card h5 {
+    position: relative;
+    top: -10vw;
+    color:gray;
+}
+svg {
+    fill: white;
+}
+.pcShopAll {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-left: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.product .preview {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 100vw;
+    -webkit-animation: bounce-top 0.9s 1s both;
+    animation: bounce-top 0.9s 1s both;
+}
+input {
+    padding: 3vw 40vw 3vw 4vw;
+    position: relative;
+    top: 5vw;
+    width: 90vw;
+    border: none;
+    border-radius: 1vw;
+    background: rgb(211, 211, 211);
+    color: black;
+}
+.mini {
+    width: 25%;
+    border: 2px solid gainsboro;
+    display: block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 4px;
+    background: gainsboro;
+    object-fit: cover;
+    height: 28vw;
+}
+.pp {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    overflow-y: hidden;
+    top: 4vw;
+    height: 40vw;
+}
+.product h1 {
+    text-align: center;
+}
+.product label {
+    display: block;
+    font-size: 15px;
+    padding: 15px 0 5px;
+}
+.borderbtm {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+}
+.product select {
+    min-height: 38px;
+    border: none;
+    text-align: center;
+    height: 38px;
+    background: rgb(211, 211, 211);
+    width: 90vw;
+    font-size: 12px;
+    border-radius: 1vw;
+    color: black;
+    --webkit-appearance:none;
+}
+@media (min-width:961px)  { 
+    .ppp {
+        position: relative;
+        top: -73vw;
+        margin-left: 75vh;
+    }
+    .btn {
+        width: 30vh;
+    }
+    .product select {
+        width: 40vw;
+    }
+    .home img {
+        object-fit: cover;
+        height: 28vw;
+        width: 100vw;
+        object-position: 88% 74%;
+    }
+    .newsletter input[type="email"] {
+        padding: 1vw 0vw 1vw 4vw;
+        position: relative;
+        top: 5vw;
+    }
+    .newsletter button {
+        margin-left: -8vw;
+    }
+    .card h4 {
+        position: relative;
+        top: -2vw;
+        white-space: break-spaces;
+        font-size: 1.5vw;
+    }
+    .card h6 {
+        color: orange;
+        font-size: 10px;
+        position: relative;
+        top: 0vw;
+    }
+    .newsletter-form {
+        background: #161616;
+        text-align: center;
+        padding: 3px;
+        padding-bottom: 10vw;
+        position: relative;
+        top: 31vw;
+    }
+    .newsletter-form input {
+        padding: 3vw 0vw 3vw 4vw;
+        position: relative;
+        top: 5vw;
+        width: 90vw;
+    }
+    svg {
+        width: 3vw;
+    }
+    .card h5 {
+        position: relative;
+        top: -3.5vw;
+        color: gray;
+    }
+    .slide {
+        width: 97vw;
+        height: 30vw;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-left: 11px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .pcShopAll {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        white-space: nowrap;
+        margin-left: 11px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .preview {
+        max-width: 66vh;
+        max-height: 36vw;
+        position: relative;
+        top: 0vw;
+        right: 25vw;
+    }
+    .pp {
+        position: relative;
+        width: 50VW;
+        top: 1vw;
+    }
+    #Ptitle {
+        position: relative;
+        top: -76vw;
+        margin-left: 36vw;
+        font-size: 3vw;
+    }
+    #procode {
+        padding: 2.5vw 3vw 3vw 5vw;
+        position: absolute;
+        margin-left: -13vh;
+        background: none;
+        border: none;
+        color: gray;
+        font-size: 20px;
+    }
+    #Pprice {
+        position: relative;
+        top: -77vw;
+        margin-left: 8vw;
+        font-size: 2vw;
+    }
+    .borderbtm {
+        display: none;
+    }
+    input {
+        padding: 1vw 0vw 1vw 4vw;
+        position: relative;
+        top: 2vw;
+        width: 40vw;
+    }
+    .nav img {
+        width: 15vw;
+    }
+    #footerMessage {
+        top:38vw;
+    }
+    .footerLinks {
+        top:38vw;
+    }
+    .card img {
+        width: 14vw;
+        height: 14vw;
+        object-fit: cover;
+    }
+    .mini {
+        width: 20%;
+        border: 2px solid gainsboro;
+        display: block;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        border-radius: 4px;
+        background: gainsboro;
+        object-fit: cover;
+        height: 10vw;
+    }
+}
