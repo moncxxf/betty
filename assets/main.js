@@ -24,7 +24,7 @@ function order(){
     'success'
   )  
   setTimeout(function(){
-    location.href="https://betty.cf"
+    location.href="https://Destin.cf"
   },7000)
 }}
 function LoadProducts(){
