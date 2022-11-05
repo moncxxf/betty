@@ -1,4 +1,4 @@
-const FooterMessage = "Destin. Simple ting <br>Brand by <a style='color:red;' href='https://instagram.com/ichemc'>ichem</a><br> Website Developed & Designed by <a style='color:red;' href='https://instagram.com/moncxf'>moncef</a>";
+const FooterMessage = "Destin. Simple ting <br>Brand by <a style='color:red;' href='https://instagram.com/ichemc'>ichemc</a><br> Website Developed & Designed by <a style='color:red;' href='https://instagram.com/moncxf'>moncef</a>";
 const code = [
     {
         'code':'maissa30',
