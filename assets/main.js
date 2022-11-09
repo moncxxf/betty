@@ -24,7 +24,7 @@ function order(){
     'success'
   )  
   setTimeout(function(){
-    location.href="https://Destin.cf"
+    location.href="https://Destin.gq"
   },7000)
 }}
 function LoadProducts(){
