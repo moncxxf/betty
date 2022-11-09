@@ -138,7 +138,7 @@ document.querySelector('#order').addEventListener('click', function(e){
     image = Products[product_number].img
     promocode = document.querySelector('#promo-code').value
     const chat_id = "2125446780";
-    var url = `https://api.telegram.org/bot5346723445:AAHRvia1KxHRTXDQXBHb6S3mdeb4wL5rYUI/sendMessage?chat_id=${chat_id}&parse_mode=Markdown&text=📦 New Order :%0A Selected Package : ${`${Products[product_number].brand} ${Products[product_number].name}`} %0A Full Name : ${fullname} %0A Phone Number : ${numero} %0A Email : ${email} %0A Instagram : https://instagram.com/${ig} %0A Street Address : ${address} %0A Size Selected : ${size} %0A Wilaya : ${city} %0A Color : ${color} %0A Order Notes : ${notes} %0A Promo Code : ${promocode}`;
+    var url = `https://api.telegram.org/bot5532279494:AAHfq8wCX-XpTh3D7mXbGte2sZsf4M4x5bM/sendMessage?chat_id=${chat_id}&parse_mode=Markdown&text=📦 New Order :%0A Selected Package : ${`${Products[product_number].brand} ${Products[product_number].name}`} %0A Full Name : ${fullname} %0A Phone Number : ${numero} %0A Email : ${email} %0A Instagram : https://instagram.com/${ig} %0A Street Address : ${address} %0A Size Selected : ${size} %0A Wilaya : ${city} %0A Color : ${color} %0A Order Notes : ${notes} %0A Promo Code : ${promocode}`;
     var oReq = new XMLHttpRequest();
     var oReq = new XMLHttpRequest();
     oReq.open("GET", url, true);
