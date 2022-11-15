@@ -1,0 +1,149 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Destin</title>
+    <link rel="stylesheet" href="../assets/main.css">
+    <script src="../assets/main.js"></script>
+    <script src="../assets/data.js"></script>
+    <script src="../assets/swal.js"></script>
+</head>
+<body>
+    <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+        <div class="Modal-content">
+          <p id="msgboxtxt">test</p>
+        </div>
+      </div>
+    <span>
+    <section class="alert">
+        <h3>SHIPPING TO 58 WILAYAS. PAYMENT ON DELIVERY</h3>
+    </section>
+    <div class="nav">
+        <h2>Destin</h2>
+    </div>
+    <section class="product">
+        <img class="preview" src="">
+        <div class="pp" style="padding: 0;">
+            <img id="thumb1" class="mini" src="">
+            <img id="thumb2" class="mini" src="">
+        </div>
+        <h1 id="Ptitle"></h1>
+        <h2 id="Pprice"></h2>
+        <h1 class="borderbtm"></h1>
+        <section class="ppp" style="text-align: center;">        <label for="sizes">Size</label><br>
+            <select name="sizes" id="sizes">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+        <label for="color">Color</label><br>
+            <select name="color" id="color">
+                <option value="Brown" selected>Brown</option>
+            </select>
+        <label for="city">City</label><br>
+            <!--- Algeria states -->
+            <select id="city" name="country-state">
+                <option value="Adrar">Adrar (+ 1050DA)</option>
+                <option value="Alger" selected>Alger (+ 300DA)</option>
+                <option value="Annaba">Annaba (+ 600DA)</option>
+                <option value="Aïn Defla">Aïn Defla (+ 1050DA)</option>
+                <option value="Aïn Témouchent">Aïn Témouchent (+ 1050DA)</option>
+                <option value="Batna">Batna (+ 600)</option>
+                <option value="Biskra">Biskra (+ 750DA)</option>
+                <option value="Blida">Blida (+ 450DA)</option>
+                <option value="Bordj Bou Arréridj">Bordj Bou Arréridj (+ 600DA)</option>
+                <option value="Bouira">Bouira (+ 600DA)</option>
+                <option value="Boumerdès">Boumerdès (+ 450DA)</option>
+                <option value="Béchar">Béchar (+ 1050DA)</option>
+                <option value="Béjaïa">Béjaïa (+ 600DA)</option>
+                <option value="Chlef">Chlef (+ 600DA)</option>
+                <option value="Constantine">Constantine (+ 600DA)</option>
+                <option value="Djelfa">Djelfa (+ 750DA)</option>
+                <option value="El Bayadh">El Bayadh (+ 750DA)</option>
+                <option value="El Oued">El Oued (+ 750DA)</option>
+                <option value="El Tarf">El Tarf (+ 600DA)</option>
+                <option value="Ghardaïa">Ghardaïa (+ 750DA)</option>
+                <option value="Guelma">Guelma (+ 600DA)</option>
+                <option value="Illizi">Illizi (+ 1200DA)</option>
+                <option value="Jijel">Jijel (+ 600DA)</option>
+                <option value="Khenchela">Khenchela (+ 600DA)</option>
+                <option value="Laghouat">Laghouat (+ 750DA)</option>
+                <option value="M'sila">M'sila (+ 600DA)</option>
+                <option value="Mascara">Mascara (+ 600DA)</option>
+                <option value="Mila">Mila (+ 600DA)</option>
+                <option value="Mostaganem">Mostaganem (+ 600DA)</option>
+                <option value="Médéa">Médéa (+ 600DA)</option>
+                <option value="Naama">Naama (+ 750DA)</option>
+                <option value="Oran">Oran (+ 600DA)</option>
+                <option value="Ouargla">Ouargla (+ 750DA)</option>
+                <option value="Oum el Bouaghi">Oum el Bouaghi (+ 600DA)</option>
+                <option value="Relizane">Relizane (+ 600DA)</option>
+                <option value="Saïda">Saïda (+ 600DA)</option>
+                <option value="Sidi Bel Abbès">Sidi Bel Abbès (+ 600DA)</option>
+                <option value="Skikda">Skikda (+ 600DA)</option>
+                <option value="Souk Ahras">Souk Ahras (+ 600DA)</option>
+                <option value="Sétif">Sétif (+ 600DA)</option>
+                <option value="Tamanrasset">Tamanrasset (+ 1250DA)</option>
+                <option value="Tiaret">Tiaret (+ 600DA)</option>
+                <option value="Tindouf">Tindouf (+ 1250DA)</option>
+                <option value="Tipaza">Tipaza (+ 450DA)</option>
+                <option value="Tissemsilt">Tissemsilt (+ 600DA)</option>
+                <option value="Tizi Ouzou">Tizi Ouzou (+ 600DA)</option>
+                <option value="Tlemcen">Tlemcen (+ 600DA)</option>
+                <option value="Tébessa">Tébessa (+ 750DA)</option>
+            </select><br><br>
+            <input type="text" id="fullname" placeholder="Full Name"><br><br>
+            <input type="text" id="address" placeholder="Street address"><br><br>
+            <input type="number" id="numero" placeholder="Phone Number"><br><br>
+            <input type="email" id="email" placeholder="E-Mail"><br><br>
+            <input type="text" id="ig" placeholder="Instagram"><br><br>
+            <input type="text" id="promo-code" placeholder="Promo Code (OPTIONAL)"><button id="procode" onclick="promcode()" type="submit" value="->">➡️</button><br><br>
+            <input type="text" id="notes" placeholder="Order notes (OPTIONAL)">
+            <br><br><br><br>
+            <button id="order" onclick="order();setTimeout(function(){document.querySelector('#order').textContent = 'Ordered !'}, 1000)" class="btn">ORDER</button>            
+        </section>
+    </section>
+    <h3 id="footerMessage" style="POSITION: RELATIVE;
+    top: 35vw;
+    text-align: center;"></h3>
+</span>    <script>
+buildTable(Products)
+	function buildTable(data){
+		for (var i = 0; i < data.length; i++){
+			document.title = `${data[i].name} | Destin`
+		}
+	}
+product_number = 4
+document.querySelector('#Ptitle').innerHTML = `${Products[product_number].brand} | ${Products[product_number].name}`
+
+document.querySelector('#Pprice').innerHTML = Products[product_number].price
+document.querySelector('.preview').src = `${Products[product_number].img}`
+document.querySelector('#thumb1').src = `${Products[product_number].img}`
+document.querySelector('#thumb2').src = `${Products[product_number].thumb}`
+document.querySelector('#thumb1').addEventListener("click", function(){document.querySelector('.preview').src = `${Products[product_number].img}`})
+document.querySelector('#thumb2').addEventListener("click", function(){document.querySelector('.preview').src = `${Products[product_number].thumb}`})
+document.title = `Destin | ${`${Products[product_number].brand} ${Products[product_number].name}`}`
+document.querySelector('#order').addEventListener('click', function(e){
+    e.preventDefault(); 
+    address = document.querySelector('#address').value
+    email = document.querySelector('#email').value
+    ig = document.querySelector('#ig').value
+    notes = document.querySelector('#notes').value
+    fullname = document.querySelector('#fullname').value
+    numero = document.querySelector('#numero').value
+    size = document.querySelector('#sizes').value
+    color = document.querySelector('#color').value
+    city = document.querySelector('#city').value
+    image = Products[product_number].img
+    promocode = document.querySelector('#promo-code').value
+    const chat_id = "2125446780";
+    var url = `https://api.telegram.org/bot5532279494:AAHfq8wCX-XpTh3D7mXbGte2sZsf4M4x5bM/sendMessage?chat_id=${chat_id}&parse_mode=Markdown&text=📦 New Order :%0A Selected Package : ${`${Products[product_number].brand} ${Products[product_number].name}`} %0A Full Name : ${fullname} %0A Phone Number : ${numero} %0A Email : ${email} %0A Instagram : https://instagram.com/${ig} %0A Street Address : ${address} %0A Size Selected : ${size} %0A Wilaya : ${city} %0A Color : ${color} %0A Order Notes : ${notes} %0A Promo Code : ${promocode}`;
+    var oReq = new XMLHttpRequest();
+    var oReq = new XMLHttpRequest();
+    oReq.open("GET", url, true);
+    oReq.send();
+    console.log("sent")
+})
+    </script>
+
+</body></html>
