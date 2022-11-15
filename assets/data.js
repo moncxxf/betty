@@ -12,11 +12,83 @@ const code = [
 const Products = [
     {
         'brand':'Destin',
-        'name':'Ensemble',
+        'name':'Ensemble White',
         'price':'4700 DA',
-        'thumb':'https://media.boohoo.com/i/boohoo/fzz51311_white_xl/f%C3%A9minin-white-jogging-oversize-basique/?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit',
-        'img':'https://scontent.cdninstagram.com/v/t1.15752-9/313042209_825086422067167_6908234697615776493_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5a057b&_nc_ohc=eJ__a4NAdAkAX8WVDMb&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdQL8bsjCp-_gL51jw-3UFJI93p6hwCj8nkBiNEzoRJK4Q&oe=638A37A7',
-        'link':'products/ensemble.html',
+        'thumb':'https://destin.gq/assets/imgs/white man back.jpg',
+        'img':'https://destin.gq/assets/imgs/white man front.jpg',
+        'link':'products/White.html',
         'available':'yes'
-    }
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Black',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/black gyal back2.jpg',
+        'img':'https://destin.gq/assets/imgs/black gyal front.jpg',
+        'link':'products/Black.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Beige',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/beige back.jpg',
+        'img':'https://destin.gq/assets/imgs/beige front.jpg',
+        'link':'products/Beige.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Blue',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/blue back.jpg',
+        'img':'https://destin.gq/assets/imgs/blue front.jpg',
+        'link':'products/Blue.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Brown',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/brown back.jpg',
+        'img':'https://destin.gq/assets/imgs/brown front.jpg',
+        'link':'products/Brown.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Gray',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/gray gyal back.jpg',
+        'img':'https://destin.gq/assets/imgs/gray gyal front1.jpg',
+        'link':'products/Gray.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Green',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/green gyal back.jpg',
+        'img':'https://destin.gq/assets/imgs/green gyal front.jpg',
+        'link':'products/Green.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble Red',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/red man back.jpg',
+        'img':'https://destin.gq/assets/imgs/red man front.jpg',
+        'link':'products/Red.html',
+        'available':'yes'
+    },
+    {
+        'brand':'Destin',
+        'name':'Ensemble SkyBlue',
+        'price':'4700 DA',
+        'thumb':'https://destin.gq/assets/imgs/skyblue back.jpg',
+        'img':'https://destin.gq/assets/imgs/skyblue front.jpg',
+        'link':'products/SkyBlue.html',
+        'available':'yes'
+    },
 ]
