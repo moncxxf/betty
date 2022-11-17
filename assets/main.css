@@ -273,16 +273,16 @@ body {
 .home {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    display: none; /* it was display:flex; */
+    display: flex; /* it was display:flex; */
     position: relative;
     justify-content: center;
     margin-top: 10vw;
 }
 .home img {
     object-fit: cover;
-    height: 295px;
+    height: 280px;
     width: 100vw;
-    object-position: 99% 70%;
+    object-position: 105% 0%;
 }
 .shop-button {
     text-decoration: none;
@@ -572,9 +572,9 @@ input {
     }
     .home img {
         object-fit: cover;
-        height: 28vw;
+        height: 36vw;
         width: 100vw;
-        object-position: 88% 74%;
+        object-position: 100% 23%;
     }
     .newsletter input[type="email"] {
         padding: 1vw 0vw 1vw 4vw;
