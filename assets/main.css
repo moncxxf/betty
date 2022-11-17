@@ -431,7 +431,8 @@ svg {
     padding: 2vw 4vw 0VW 0VW;
     font-size: smaller;
 }
-.sold-out{
+.sold {
+    display: none;
     background: #dcdcdc21;
     height: 240px;
     border-radius: 2px;
